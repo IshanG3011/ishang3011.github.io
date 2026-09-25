@@ -1,0 +1,14 @@
+body{
+    background-color: #000000;
+    color: rgb(62, 111, 22);
+}
+#box1{
+    width:150px;
+    height:150px;
+    background-color: rgb(91, 210, 250);
+    font-size: 130px;
+    text-align: center;
+    border-radius: 1em;
+    border:2px solid white;
+    transform: translateY(120%)translateX(140%) rotate(0deg);
+}

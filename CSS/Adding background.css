@@ -1,0 +1,6 @@
+body{
+    background-image:url(../Images/backgroundimage.avif);
+    background-repeat:repeat;
+    background-size: cover;
+    background-position:center;
+}

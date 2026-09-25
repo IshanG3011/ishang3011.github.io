@@ -1,0 +1,148 @@
+@font-face {
+    font-family: bungeeTint;
+    src:url(../Fonts/Bungee_Tint,Playfair_Display_SC/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf);
+}
+
+.container{
+    height:100vh;
+    width:100%;
+}
+#sports_car{
+    background-color:rgb(52, 52, 52);
+    height:200px;
+    width:200px;
+    margin:30px;
+    float:left;
+    box-shadow:0px 0px 20px red;
+
+}
+pre{
+    margin:30px;
+    color:white;
+}
+.nav_bar a{
+    text-decoration: none;
+    color:aliceblue;
+    text-align:left;
+    float:left;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    display:block;
+    padding:8px 20px;
+}
+.nav_bar a:hover{
+    background-color:hsl(0, 92%, 50%);;
+}
+.nav_bar{
+    background-color:hsl(0, 59%, 41%);
+    display:block;
+    list-style-type:none;
+    overflow:hidden;
+
+}
+
+.h1{
+    text-align:center;
+    color:white;
+    background-color: brown;
+    margin:0;
+    justify-content: center;
+}
+body{
+    background-color:black;
+    color:white
+}
+.profile_pic{
+    height:300px;
+    width:500px;
+    cursor:pointer;
+    display:flex;
+    margin:0 auto;
+    text-align:center;
+    justify-content:center;
+    background-color:rgb(56, 6, 6);
+    overflow:hidden;
+}
+img{
+    height:300px;
+    width:300px;
+    text-align:center;
+    justify-content:center;
+    display:inline-flex
+}
+@keyframes drift{
+    0%{
+        transform:translateX(-180%) rotate(-10deg);
+    }
+    35%{
+        transform:translateX(25%) rotate(7deg);
+    }
+    60%{
+        transform:translateX(-8%) rotate(-4deg);
+    }
+    100%{
+        transform:translateX(0) rotate(0deg);
+    }
+}
+.profile_pic .img:active{
+    display:flex;
+    animation-name: drift;
+    animation-timing-function: cubic-bezier(0, 1.23, 0.8, 0.38);
+    animation-duration: 1.2s;
+    transform-origin:center bottom;
+}
+#name{
+    font-family: bungeeTint;
+    font-size: 20px;
+    color: rgb(165, 14, 14);
+}
+#class{
+    font-family:bungeeTint;
+    font-size: 20px;
+    color: rgb(165, 14, 14);
+}
+#experience{
+    font-family: bungeeTint;
+    font-size: 20px;
+    color: rgb(165, 14, 14);
+}
+.page-layout {
+    display:grid;
+    grid-template-columns:1fr 280px;
+    gap:30px;
+    min-height:calc(100vh - 110px);
+    padding:30px;
+    box-sizing:border-box;
+}
+.aside {
+    height:100%;
+    padding:24px;
+    background:#3b1111;
+    border-left:4px solid #e63946;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.35);
+    box-sizing:border-box;
+}
+.thought {
+    margin:0;
+    line-height:1.6;
+    color:#f5dada;
+}
+@media (max-width:700px){
+    .page-layout{
+        grid-template-columns:1fr;
+        min-height:0;
+    }
+}
+/*.aside{
+    height:100%vh;
+    width:200px;
+    float:right;
+    background-color:red;
+    text-align: center;
+    justify-content:start;
+    display:block;
+    margin: 0px;
+}*/

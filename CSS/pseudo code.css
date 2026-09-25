@@ -1,0 +1,16 @@
+a:link {
+    color: rgb(238, 54, 244);
+    text-decoration: underline;
+}
+a:hover{
+    font-size: 1.2em;
+    color:blueviolet;
+
+}
+a:active{
+    color:red;
+    font: size 1.2em;
+}
+a:visited{
+    color:rgb(141, 113, 134);
+}

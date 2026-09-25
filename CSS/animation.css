@@ -1,0 +1,108 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100vh;
+}
+#pikachu{
+    width: 200px;
+    height: 200px;
+}
+#box{
+    background-color: #460606;
+    width: 200px;
+    height: 200px;
+    font-size:10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    animation-name:slideleft;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    opacity:1;
+    animation-timing-function:cubic-bezier(0.46, 1.24, 0.16,-0.05)
+    
+}
+@keyframes slideleft{
+    from{
+        transform:translatex(200%);
+    }
+}
+@keyframes slideright{
+    to{
+        transform:translatex(200%);
+    }
+}
+@keyframes slideup{
+    from{
+        transform:translateY(200%);
+    }
+}
+@keyframes slidedown{
+    to{
+        transform:translateY(200%);
+    }
+}
+/*@keyframes rotateanimation{
+    /*from{
+        transform:rotate(0deg);
+
+    to{
+        transform:rotateY(360deg) scale(1.5);
+    }
+    50%{
+        transform:rotatey(180deg) scale(1.5);
+    }*/
+@keyframes shrink{
+    50%{transform:scale(0.10,0.10) rotateZ(360deg)} 
+}
+@keyframes fadeIn{
+    50%{opacity:0%}
+}
+@keyframes fade{
+    50%{opacity:100%}
+}
+@keyframes multicolor{
+    10%{
+        background-color:rgb(70, 6, 6);
+    }
+    20%{
+        background-color:rgb(133, 123, 23);
+    }
+    30%{
+        background-color:rgb(34, 97, 28)
+    }
+    40%{
+        background-color:rgb(25, 128, 123);
+    }
+    50%{
+        background-color:rgb(139, 41, 147)
+    }
+    60%{
+        background-color:rgb(195, 188, 107);
+    }
+    70%{
+        background-color:rgb(135, 59, 71)
+    }
+    80%{
+        background-color:rgb(56, 53, 117);
+    }
+    90%{
+        background-color:rgb(55, 34, 77)
+    }
+}
+@keyframes glow{
+    50%{
+        box-shadow: 0px 0px 2em yellow;
+    }
+}
+
+
+/*#box:hover{
+    
+}*/
